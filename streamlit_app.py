@@ -9,4 +9,4 @@ streamlit.title('Build Your Own fruits 🍎🍒🍉🍓🍊🥭🫒🥝')
 
 import request
 fruityvice_response=request.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response)
+streamlit.text(fruityvice_response.json())
