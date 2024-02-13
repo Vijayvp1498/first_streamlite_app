@@ -7,6 +7,6 @@ streamlit.text('🏵️ Hard-Boiled Fried ')
 
 streamlit.title('Build Your Own fruits 🍎🍒🍉🍓🍊🥭🫒🥝')
 
-import request
-fruityvice_response=request.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response.json())
+import pandas
+my_fruit_list =pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/data/fruit_macros.txt")
+streamlit.dataframe(my_fruit_list)
